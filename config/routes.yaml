@@ -28,3 +28,17 @@ liste:
 liste2:
   path : /liste2
   controller: App\Controller\HelloWorldController::liste2
+
+loginForm:
+    path: /login
+    controller: App\Controller\Forms\LoginController::loginForm
+    methods: GET|POST
+
+creationCompteForm:
+  path: /creation
+  controller: App\Controller\Forms\CompteController::creationCompteForm
+  methods: GET
+creationPost:
+  path: /creation
+  controller: App\Controller\Forms\CompteController::creationPost
+  methods: POST

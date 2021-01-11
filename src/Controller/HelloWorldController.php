@@ -54,17 +54,7 @@ class HelloWorldController extends \Symfony\Bundle\FrameworkBundle\Controller\Ab
         $formData = $request->request->get('name');
         return new Response("Merci $formData");
     }
-    /*function afficheForm():Response{
-        $formBuilder = $this->createFormBuilder();
-        $formBuilder->add('name',TextType::class);
-        $formBuilder->add('submit',SubmitButton::class);
-        $url = $this->generateUrl("formReceive");
-        $formBuilder->setMethod('POST');
-        $formBuilder->setAction($url);
-        $form = $formBuilder.getF
-        $formView = $form->createView();
-        return $this->render('form.html.twig',['form'=>$formView]);
-    }*/
+
 
     //affichage liste donnee dans le template
     /*function liste():Response{
