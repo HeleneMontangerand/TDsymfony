@@ -34,11 +34,13 @@ loginForm:
     controller: App\Controller\Forms\LoginController::loginForm
     methods: GET|POST
 
+loginPost:
+    path: /loginp
+    controller: App\Controller\Forms\LoginController::loginPost
+    methods: GET|POST
+
 creationCompteForm:
   path: /creation
   controller: App\Controller\Forms\CompteController::creationCompteForm
-  methods: GET
-creationPost:
-  path: /creation
-  controller: App\Controller\Forms\CompteController::creationPost
-  methods: POST
+  methods: GET|POST
+

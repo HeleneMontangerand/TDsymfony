@@ -12,43 +12,41 @@ use Symfony\Component\HttpFoundation\Response;
 class CompteController extends \Symfony\Bundle\FrameworkBundle\Controller\AbstractController
 {
 
-    public function creationFormulaireCompte():Form{
+    /*public function creationFormulaireCompte():Form{
         //recup d'un constructeur de formulaire
         $formBuilder = $this->createFormBuilder();
-        $formBuilder->add('Nom',TextType::class);
-        $formBuilder->add('Prenom',TextType::class);
-        $formBuilder->add('DateNaissance',DateType::class);
-        $formBuilder->add('Login',TextType::class);
-        $formBuilder->add('Password',PasswordType::class);
+        $formBuilder->add('nom',TextType::class);
+        $formBuilder->add('prenom',TextType::class);
+        $formBuilder->add('dateNaissance',DateType::class);
+        $formBuilder->add('login',TextType::class);
+        $formBuilder->add('password',PasswordType::class);
         $formBuilder->add('submit',SubmitType::class);
         //recup du formulaire
-        $form = $formBuilder->getForm();
-        return $form;
-    }
+        $form2 = $formBuilder->getForm();
+        return $form2;
+    }*/
 
-    public function creationCompteForm():Response{
-        $form=$this->creationFormulaireCompte();
-        $formView= $form->createView();
-        return $this->render('creation.html.twig',['form'=>$formView]);
-    }
-    public function creationPost(Request $request):Response{
-        $form=$this->creationFormulaireCompte();
+    public function creationCompteForm(Request $request): Response
+    {
+        //$form=$this->creationFormulaireCompte();
+        $form = $this->createForm(UserFormType::class);
         $form->handleRequest($request);
-
-        $correct = true;
-
+        //verif si soumis et valide
         if($form->isSubmitted() && $form->isValid()) {
+
             $data = $form->getData();
-            $nom = $data['Nom'];
             $login = $data['login'];
             $password = $data['password'];
-
+            $nom= $data['nom'];
+            $prenom= $data['prenom'];
+            $dateN= $data['dateN'];
+            $returnMessage="Création réussie !";
+            return $this->render('creation_result.html.twig', ['message' => $returnMessage]);
         }
-        if ($correct)
-            $returnMessage = "Création réussie !";
-        else
-            $returnMessage = 'Désolé, veuillez réessayer !';
 
-        return $this->render('creation_result.html.twig',['message'=>$returnMessage]);
+        $formView = $form->createView();
+        return $this->render('creation.html.twig',['form'=>$formView]);
     }
+
+
 }

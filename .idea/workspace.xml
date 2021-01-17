@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c3ffb3f-bd02-403b-a33e-41cf932cf92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Forms/CompteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Forms/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Forms/LoginFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Forms/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/creation.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/creation_result.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login_result.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Forms/UserFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Forms/CompteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Forms/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/LoginFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Forms/LoginFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/UserType.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HelloWorldController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HelloWorldController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/creation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/creation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/creation_result.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/creation_result.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,12 +156,27 @@
       <workItem from="1610195809993" duration="17482000" />
       <workItem from="1610263927278" duration="5268000" />
       <workItem from="1610297638514" duration="1862000" />
-      <workItem from="1610348669022" duration="14232000" />
+      <workItem from="1610348669022" duration="14300000" />
+      <workItem from="1610875406399" duration="5804000" />
+      <workItem from="1610891802112" duration="2787000" />
+      <workItem from="1610896058160" duration="3995000" />
     </task>
+    <task id="LOCAL-00001" summary="td2">
+      <created>1610365810264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610365810264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="td2" />
+    <option name="LAST_COMMIT_MESSAGE" value="td2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

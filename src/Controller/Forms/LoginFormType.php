@@ -16,7 +16,7 @@ class LoginFormType extends \Symfony\Component\Form\AbstractType
     public  function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('login',TextType::class,['constraints'=>new NotBlank()]);
-        $builder->add('password',PasswordType::class,['constraints'=>new Length(null,3,10)]);
+        $builder->add('password',PasswordType::class,['constraints'=>new Length(null,3,15)]);
         $builder->add('submit',SubmitType::class);
     }
 }

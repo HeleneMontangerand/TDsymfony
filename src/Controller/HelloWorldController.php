@@ -57,13 +57,13 @@ class HelloWorldController extends \Symfony\Bundle\FrameworkBundle\Controller\Ab
 
 
     //affichage liste donnee dans le template
-    /*function liste():Response{
+    function liste():Response{
         return $this->render('liste.html.twig');
-    }*/
+    }
 
     //affichage liste declaree avant transmission au template
     function liste2():Response{
         $liste = ['Bernard','Jean','Daniel','Patrick'];
-        return $this->render('liste.html.twig',['liste'=>$liste]);
+        return $this->render('liste2.html.twig',['liste'=>$liste]);
     }
 }

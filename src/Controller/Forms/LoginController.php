@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class LoginController extends \Symfony\Bundle\FrameworkBundle\Controller\AbstractController
 {
-    private $accounts = [['login'=>'admin','password'=>'Azerty123456!'],['login'=>'user','password'=>'987654uioP!']];
+
 
     //remplacee par la creation d une classe LoginFormType
     /*private function creationFormulaire():Form{
@@ -26,6 +26,7 @@ class LoginController extends \Symfony\Bundle\FrameworkBundle\Controller\Abstrac
         return $form;
     }*/
 
+    //accepte n importe quels identifiants si les criteres de validation sont respectes
     public function loginForm(Request $request):Response{
         //$form=$this->creationFormulaire();//si utilisation fonction
         $form=$this->createForm(LoginFormType::class);
@@ -47,6 +48,7 @@ class LoginController extends \Symfony\Bundle\FrameworkBundle\Controller\Abstrac
         return $this->render('login.html.twig',['form'=>$formView]);
     }
 
+    //accepte seulement les identifiants de $accounts
     public function loginPost(Request $request):Response{
         //$form=$this->creationFormulaire();
         $form=$this->createForm(LoginFormType::class);
@@ -57,11 +59,19 @@ class LoginController extends \Symfony\Bundle\FrameworkBundle\Controller\Abstrac
             $data = $form->getData();
             $login = $data['login'];
             $password = $data['password'];
-
-            $returnMessage = "Bienvenue $login!";
-        }else{
-            $returnMessage = 'Désolé, veuillez réessayer !';
+            $accounts = [['login' => 'admin', 'password' => 'Azerty123456!'], ['login' => 'user', 'password' => '987654uioP!']];
+            foreach ($accounts as $account) {
+                if ($account['login'] == $login && $account['password'] == $password)
+                    $correct = true;
+            }
+            if ($correct) {
+                $returnMessage = "Bienvenue $login!";
+            } else {
+                $returnMessage = 'Désolé, veuillez réessayer !';
+            }
+            return $this->render('login_result.html.twig', ['message' => $returnMessage]);
         }
-        return $this->render('login_result.html.twig',['message'=>$returnMessage]);
+        $formView = $form->createView();
+        return $this->render('login.html.twig',['form'=>$formView]);
     }
 }
