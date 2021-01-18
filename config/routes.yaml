@@ -44,3 +44,18 @@ creationCompteForm:
   controller: App\Controller\Forms\CompteController::creationCompteForm
   methods: GET|POST
 
+
+createCake:
+  path: /create
+  controller: App\Controller\CakeController::createCake
+  methods: GET
+
+getById:
+  path: /find/{id}
+  controller: App\Controller\CakeController::getById
+  methods: GET
+
+deleteById:
+  path: /supp/{id}
+  controller: App\Controller\CakeController::deleteById
+  methods: GET

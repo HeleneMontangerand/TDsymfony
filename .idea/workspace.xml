@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c3ffb3f-bd02-403b-a33e-41cf932cf92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Forms/UserFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/CompteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Forms/CompteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Forms/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/LoginFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Forms/LoginFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Forms/UserType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HelloWorldController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HelloWorldController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/creation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/creation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/creation_result.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/creation_result.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +132,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -159,7 +155,9 @@
       <workItem from="1610348669022" duration="14300000" />
       <workItem from="1610875406399" duration="5804000" />
       <workItem from="1610891802112" duration="2787000" />
-      <workItem from="1610896058160" duration="3995000" />
+      <workItem from="1610896058160" duration="4291000" />
+      <workItem from="1610953111679" duration="1367000" />
+      <workItem from="1610955945667" duration="10753000" />
     </task>
     <task id="LOCAL-00001" summary="td2">
       <created>1610365810264</created>
